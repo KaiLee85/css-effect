@@ -1,0 +1,36 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #1c547d;
+  overflow: hidden;
+}
+
+.box .tree {
+  position: absolute;
+  bottom: -131px;
+  width: 100%;
+  height: 100%;
+}
+
+.box .tree.tree1 {
+  background: url(tree1.png);
+  background-repeat: repeat-x;
+  animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+  /* 백그라운드 포지션을 바꾸면 오른쪽 왼쪽 움직임 바꿀수 있음 */
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    /* 사진 너비 */
+    background-position: 1406px 0;
+  }
+}
